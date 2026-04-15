@@ -1,0 +1,12 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "shape-voice",
+  "version": "0.0.1",
+  "identifier": "com.shape-voice",
+  "build": {
+    "frontendDist": "../ui-mobile/dist",
+    "devUrl": "http://localhost:17917",
+    "beforeDevCommand": "pnpm -F ui-mobile dev",
+    "beforeBuildCommand": "pnpm -F ui-mobile build"
+  }
+}

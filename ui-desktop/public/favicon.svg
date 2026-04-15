@@ -1,0 +1,21 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="roundMask">
+      <rect x="0" y="0" width="1024" height="1024" rx="88"/>
+    </clipPath>
+    <linearGradient id="pinkSide" x1="0" y1="0" x2="800" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0E6D8"/>
+      <stop offset="0.55" stop-color="#DAA098"/>
+      <stop offset="1" stop-color="#FA8DAA"/>
+    </linearGradient>
+    <linearGradient id="greenSide" x1="220" y1="0" x2="1024" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8A9C6F"/>
+      <stop offset="0.55" stop-color="#9DA295"/>
+      <stop offset="1" stop-color="#E8E8D8"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#roundMask)">
+    <polygon points="0,0 220,0 800,1024 0,1024" fill="url(#pinkSide)"/>
+    <polygon points="220,0 1024,0 1024,1024 800,1024" fill="url(#greenSide)"/>
+  </g>
+</svg>

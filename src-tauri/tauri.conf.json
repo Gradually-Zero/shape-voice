@@ -1,0 +1,31 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "shape-voice",
+  "version": "0.0.1",
+  "identifier": "com.shape-voice",
+  "build": {
+    "frontendDist": "../ui-desktop/dist",
+    "devUrl": "http://localhost:16917",
+    "beforeDevCommand": "pnpm -F ui-desktop dev",
+    "beforeBuildCommand": "pnpm -F ui-desktop build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "shape-voice",
+        "width": 1200,
+        "height": 800,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+  }
+}

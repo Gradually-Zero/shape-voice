@@ -1,0 +1,13 @@
+{
+  "name": "shape-voice",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "tauri": "tauri",
+    "clean": "sh ./scripts/clean.sh"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.10.1"
+  }
+}
