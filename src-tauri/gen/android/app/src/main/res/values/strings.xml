@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">shape-voice</string>
-    <string name="main_activity_title">shape-voice</string>
+  <string name="app_name">shape-voice</string>
+  <string name="main_activity_title">shape-voice</string>
+  <string name="storage_permission_title">需要文件访问权限</string>
+  <string name="storage_permission_message">shape-voice
+    需要访问共享存储，才能在设备主目录中读取配置和保存接收的文件。请在系统设置中允许管理所有文件。</string>
+  <string name="storage_permission_action">前往授权</string>
 </resources>

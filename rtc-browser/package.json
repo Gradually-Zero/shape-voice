@@ -1,0 +1,11 @@
+{
+  "name": "rtc-browser",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./text": "./src/text-service.ts",
+    "./transfer": "./src/transfer-service.ts",
+    "./types": "./src/types.ts"
+  }
+}

@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite';
 import react, { reactCompilerPreset } from '@vitejs/plugin-react';
 import babel from '@rolldown/plugin-babel';
+import tailwindcss from '@tailwindcss/vite';
 
 const host = process.env.TAURI_DEV_HOST;
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
+  plugins: [react(), babel({ presets: [reactCompilerPreset()] }), tailwindcss()],
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
   //
   // 1. prevent Vite from obscuring rust errors
@@ -23,9 +24,5 @@ export default defineConfig({
           port: 16918,
         }
       : undefined,
-    watch: {
-      // 3. tell Vite to ignore watching `src-tauri`
-      ignored: ['**/src-tauri/**'],
-    },
   },
 });

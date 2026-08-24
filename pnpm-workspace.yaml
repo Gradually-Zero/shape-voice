@@ -1,3 +1,6 @@
 packages:
+  - 'rtc-browser'
   - 'ui-desktop'
   - 'ui-mobile'
+minimumReleaseAgeExclude:
+  - '@types/react-dom@19.2.5'
